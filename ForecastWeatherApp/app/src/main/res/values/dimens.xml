@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--layout size-->
+    <dimen name="item_image_size">56dp</dimen>
+    <dimen name="size_dp_0">0dp</dimen>
+    <dimen name="size_dp_1">1dp</dimen>
+    <dimen name="size_dp_2">2dp</dimen>
+    <dimen name="size_dp_4">4dp</dimen>
+    <dimen name="size_dp_16">16dp</dimen>
+    <dimen name="size_dp_20">20dp</dimen>
+    <dimen name="size_dp_25">25dp</dimen>
+    <dimen name="size_dp_55">55dp</dimen>
+    <dimen name="size_dp_104">104dp</dimen>
+    <dimen name="size_dp_200">200dp</dimen>
+    <dimen name="size_dp_285">285dp</dimen>
+
+    <!--text size-->
+    <dimen name="size_sp_18">18sp</dimen>
+    <dimen name="size_sp_25">25sp</dimen>
+    <dimen name="size_sp_27">27sp</dimen>
+    <dimen name="size_sp_70">70sp</dimen>
+
+</resources>

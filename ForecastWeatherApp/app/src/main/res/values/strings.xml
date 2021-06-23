@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Weather Forecast Application</string>
+    <string name="user_has_not_internet_connection_message">You don\'t have internet connection, cannot get data offline.</string>
+    <string name="error_with_fetching_weather_details_message">Something went wrong, please try again later.</string>
+    <string name="backgroundscreenimage">backgroundScreenImage</string>
+    <string name="wind_speed">Wind speed:\u0020</string>
+    <string name="humidity">Humidity:\u0020</string>
+    <string name="cloud_coverage">Cloud coverage:\u0020</string>
+    <string name="cloud_pressure">Pressure:\u0020</string>
+    <string name="sunrise">Sunrise:\u0020</string>
+    <string name="sunset">Sunset:\u0020</string>
+    <string name="timezone">Timezone:\u0020</string>
+</resources>

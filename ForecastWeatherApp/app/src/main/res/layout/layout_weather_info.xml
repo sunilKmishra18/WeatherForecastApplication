@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/llWeatherInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size_dp_25">
+
+            <TextView
+                android:id="@+id/textViewCurrentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="start|top"
+                android:layout_marginStart="@dimen/size_dp_16"
+                android:layout_marginTop="@dimen/size_dp_4"
+                android:text="Monday, 16:40"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCityCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/size_dp_4"
+                android:layout_marginEnd="@dimen/size_dp_16"
+                android:text="Bangalore, IN"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/separatorCurrentTime"
+                style="@style/HorizontalDivider"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_dp_1"
+                android:layout_marginBottom="@dimen/size_dp_0" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size_dp_104"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewCurrentTemperature"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="19 C"
+                android:textSize="@dimen/size_sp_70" />
+
+            <TextView
+                android:id="@+id/textViewWeatherSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Cloudy rain"
+                android:textSize="@dimen/size_sp_25" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutSunrise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/size_dp_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sunrise"
+                    android:textSize="@dimen/size_sp_18" />
+
+                <TextView
+                    android:id="@+id/textViewSunriseValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13%"
+                    android:textSize="@dimen/size_sp_18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutSunset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sunset"
+                    android:textSize="@dimen/size_sp_18" />
+
+                <TextView
+                    android:id="@+id/textViewSunsetValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13%"
+                    android:textSize="@dimen/size_sp_18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTimezone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/timezone"
+                    android:textSize="@dimen/size_sp_18" />
+
+                <TextView
+                    android:id="@+id/textViewTimezoneValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13%"
+                    android:textSize="@dimen/size_sp_18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutPressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cloud_pressure"
+                    android:textSize="@dimen/size_sp_18" />
+
+                <TextView
+                    android:id="@+id/textViewCloudPressureValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13%"
+                    android:textSize="@dimen/size_sp_18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCloudCoverage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cloud_coverage"
+                    android:textSize="@dimen/size_sp_18" />
+
+                <TextView
+                    android:id="@+id/textViewCloudCoverageValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13%"
+                    android:textSize="@dimen/size_sp_18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutWindSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wind_speed"
+                    android:textSize="@dimen/size_sp_18" />
+
+                <TextView
+                    android:id="@+id/textViewWindSpeedValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4,5 m/s"
+                    android:textSize="@dimen/size_sp_18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutHumidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/humidity"
+                    android:textSize="@dimen/size_sp_18" />
+
+                <TextView
+                    android:id="@+id/textViewHumidityValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="34%"
+                    android:textSize="@dimen/size_sp_18" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</merge>
