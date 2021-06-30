@@ -2,7 +2,7 @@
 
 Weather Forecast Application displays the current weather forecast using the OpenWeatherMap free weather API.
 
-###Application used Languages, Libraries and Tools :
+## Application used Languages, Libraries and Tools :
 
 * Application Language : Kotlin
 * Architectural Pattern : MVVM (Model View View Model)
